@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Thế Nhân</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-icons-font@v10/font/simple-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/audio.js"></script>
     <script src="js/script.js"></script>
-
-   
+    <script src="js/reponsive.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -19,9 +18,12 @@
             <nav>
                 <div class="logo">
                     <a href="#hero">
-                    <img src="img/logo.png" alt="">
+                        <img src="img/logo.png" alt="Logo">
                     </a>
                 </div>
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul class="nav-links">
                     <li><a href="#hero">Trang Chủ</a></li>
                     <li><a href="#about">Giới Thiệu</a></li>
@@ -29,9 +31,9 @@
                     <li><a href="#experience">Kinh Nghiệm</a></li>
                     <li><a href="#contact">Liên Hệ</a></li>
                 </ul>
-                <div class="music-toggle" id="musicToggle">
-      <i class="fas fa-music"></i>
-    </div>
+                <div class="music-toggle" id="musicToggle" aria-label="Toggle background music">
+                    <i class="fas fa-music"></i>
+                </div>
             </nav>
         </div>
     </header>
@@ -41,7 +43,7 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Xin chào, tôi là </h1>
-                <h1 ><span>Đinh Thế Nhân</span></h1>
+                <h1><span>Đinh Thế Nhân</span></h1>
                 <p>Frontend Developer và có 2 tháng thực tập kinh nghiệm về thiết kế website hiện đại, responsive và tương tác cao. Tôi đam mê tạo ra những trải nghiệm người dùng tuyệt vời.</p>
                 <a href="#contact" class="btn">Liên hệ với tôi</a>
             </div>
@@ -114,7 +116,7 @@
                         <i class="fab fa-node"></i>
                     </div>
                     <h3>NodeJS</h3>
-                    <p>Xây dựng Sever key và Backend bằng node js express.</p>
+                    <p>Xây dựng Server key và Backend bằng Node.js Express.</p>
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">
@@ -132,10 +134,10 @@
                 </div>
                 <div class="skill-card">
                     <div class="skill-icon">
-                        <i class="fab fa-php"></i>
+                        <i class="si si-nextdotjs"></i>
                     </div>
-                    <h3>PHP</h3>
-                    <p>Xây dựng website động, xử lý form và kết nối cơ sở dữ liệu MySQL.</p>
+                    <h3>Next.js</h3>
+                    <p>Phát triển ứng dụng web hiện đại với React framework Next.js.</p>
                 </div>
             </div>
         </div>
@@ -145,29 +147,28 @@
     <section id="experience">
         <div class="container">
             <div class="section-title">
-                <h2>Các Dự Án Đã Làm</h2>
+                <h2>Các Dự Án Thực Tế</h2>
             </div>
             <div class="experience-container">
                 <div class="experience-card">
                     <h3>Dự Án Tuyển Dụng</h3>
-                    <div class="experience-date">Tháng 6/2025 - Tháng 7/2022</div>
+                    <div class="experience-date">Tháng 6/2025 - Tháng 8/2025</div>
                     <p>Xây dựng website thương mại điện tử với ReactJS và Node.js. Thiết kế responsive và tối ưu trải nghiệm người dùng.</p>
                     <div class="experience-overlay">
-                        <h4>( React + NodeJS )</h4>
+                        <h4>(React + NodeJS)</h4>
                         <div class="overlay-buttons">
                             <a href="https://github.com/dtnhan205/api_tuyendung_cty" target="_blank" class="overlay-btn code-btn">Code BA</a>
                             <a href="https://github.com/JePpydeyy/React_WebTuyenDung" target="_blank" class="overlay-btn demo-btn">Code FE</a>
                             <a href="https://ppm-demo.nichietsuvn.com" target="_blank" class="overlay-btn demo-btn">Xem Demo</a>
-
                         </div>
                     </div>
                 </div>
                 <div class="experience-card">
                     <h3>Tài Liệu API</h3>
-                    <div class="experience-date">Tháng 8/2025 - Tháng 9/2022</div>
-                    <p>Phát triển tài liệu API của dự án Mỹ Phẩm tích hợp Spline 3D scene .</p>
+                    <div class="experience-date">Tháng 8/2025 - Tháng 9/2025</div>
+                    <p>Phát triển tài liệu API của dự án Mỹ Phẩm tích hợp Spline 3D scene.</p>
                     <div class="experience-overlay">
-                        <h4>( React )</h4>
+                        <h4>(React)</h4>
                         <div class="overlay-buttons">
                             <a href="https://github.com/dtnhan205/TaiLieuApi_DUANTN" target="_blank" class="overlay-btn code-btn">Xem Code</a>
                             <a href="https://dinhthenhan.site" target="_blank" class="overlay-btn demo-btn">Xem Demo</a>
@@ -177,14 +178,13 @@
                 <div class="experience-card">
                     <h3>Dự Án Bán Mỹ Phẩm</h3>
                     <div class="experience-date">Tháng 6/2025 - Tháng 8/2025</div>
-                    <p>Thiết kế và code website bán mỹ phẩm (Code chính BA) Tham gia code luồng đi chính và Chatbot AI.</p>
+                    <p>Thiết kế và code website bán mỹ phẩm (Code chính BA). Tham gia code luồng đi chính và Chatbot AI.</p>
                     <div class="experience-overlay">
-                        <h4>( React + NextJS + NodeJS )</h4>
+                        <h4>(React + NextJS + NodeJS)</h4>
                         <div class="overlay-buttons">
                             <a href="https://github.com/dtnhan205/api_pure_bonanica" target="_blank" class="overlay-btn code-btn">Code BA</a>
                             <a href="https://github.com/JePpydeyy/Pure-Botanica" target="_blank" class="overlay-btn demo-btn">Code FE</a>
                             <a href="http://purebotanica.online/" target="_blank" class="overlay-btn demo-btn">Xem Demo</a>
-
                         </div>
                     </div>
                 </div>
@@ -220,14 +220,28 @@
                         <p>Đồng Nai, Việt Nam</p>
                     </div>
                 </div>
-                <div class="contact-info">
-                    <h3>Gửi tin nhắn</h3>
-                    <form>
-                        <input type="text" placeholder="Họ và tên" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Nội dung" rows="5" required></textarea>
-                        <button type="submit" class="btn">Gửi tin nhắn</button>
-                    </form>
+                <div class="contact-info social-links-container">
+                    <h3>Kết nối với tôi</h3>
+                    <div class="social-links">
+                        <a href="https://facebook.com/dinhthenhan" class="social-link" aria-label="Visit my Facebook" style="--delay: 0.1s;">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://zalo.me/0342031354" class="social-link" aria-label="Contact me on Zalo" style="--delay: 0.2s;">
+                            <i class="si si-zalo"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@nhanreg" class="social-link" aria-label="Visit my YouTube" style="--delay: 0.3s;">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@thenhanff" class="social-link" aria-label="Visit my TikTok" style="--delay: 0.4s;">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://github.com/dtnhan205" class="social-link" aria-label="Visit my GitHub" style="--delay: 0.5s;">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dinhnhan_05" class="social-link" aria-label="Visit my Instagram" style="--delay: 0.6s;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,20 +250,12 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="social-links">
-                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-            </div>
             <p>&copy; 2025 Đinh Thế Nhân. Web Developer.</p>
         </div>
     </footer>
-        <audio id="bg-music" autoplay loop>
-            <source src="audio/music.mp3" type="audio/mpeg">
-            Trình duyệt của bạn không hỗ trợ audio.
-        </audio>
-   
+    <audio id="bg-music" autoplay loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ audio.
+    </audio>
 </body>
 </html>
